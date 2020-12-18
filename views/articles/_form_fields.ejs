@@ -1,0 +1,25 @@
+<div class="form-group">
+  <label for="title">Title</label>
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+  <label for="description">Auther</label>
+  <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+  <label for="markdown">Container</label>
+  <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+<div class="form-group">
+  <label for="tags">Tags</label>
+  <ul class="list-group">
+    <li  class="list-group-item"">sports</li>
+    <li class="list-group-item"">economic</li>
+    <li  class="list-group-item"">other</li>
+    <li class="list-group-item"">Politic</li>
+    <li class="list-group-item"">Dance</li>
+
+  </ul>
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
